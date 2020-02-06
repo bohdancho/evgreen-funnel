@@ -1,0 +1,55 @@
+.main {
+  padding: 110px 0;
+  background: url('../img/main-bg.png') top center no-repeat;
+  background-size: 100% auto;
+  &__item {
+    margin-bottom: 104px;
+    padding-right: 220px;
+  }
+  &__title {
+    margin-bottom: 26px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #24153F;
+  }
+  &__text {
+    line-height: 1.36;
+    color: #4E465E;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .main {
+    &__item {
+      padding-right: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .main {
+    padding: 40px 0;
+    &__item {
+      padding-right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .main {
+    background: url('../img/main-square.svg') right 8px top 10px no-repeat;
+    background-size: 18px;
+    &__item {
+      margin-bottom: 40px;
+      padding: 0;
+    }
+    &__title {
+      margin-bottom: 13px;
+      font-size: 20px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
+}
+
+@media screen and (max-width: 1201px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .container {
+    max-width: 750px;
+  }
+  .btn {
+    padding: 17px 31px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 283px;
+    padding: 0;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  padding: 17px 31px;
+  background: #FDC720;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}

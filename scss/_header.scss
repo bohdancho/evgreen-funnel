@@ -1,0 +1,135 @@
+.header {
+  background: url('../img/header-bg.png') bottom center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  &-nav {
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__name {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      line-height: 1.17;
+    }
+    &__logo {
+      margin-right: 24px;
+      width: 90px;
+      height: 90px;
+    }
+    &__info {
+      display: flex;
+      align-items: center;    
+    }
+    &__mail {
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      &__icon {
+        margin-right: 10px;
+        width: 16px;
+      }
+      &__text {
+        font-size: 15px;
+      }
+    }
+    &__btn {
+      font-size: 15px;
+    }
+  }
+  &-main {
+    padding: 135px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__title {
+      margin-bottom: 32px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 700;
+      font-size: 52px;
+    }
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .header {
+    &-nav {
+      &__mail {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .header {
+    &-nav {
+      &__name {
+        margin-right: 10px;
+      }
+      &__logo {
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+      &__mail {
+        margin-right: 20px;
+        &__icon {
+          margin-right: 5px;
+        }
+        &__text {
+          font-size: 14px;
+        }
+      }
+      &__btn {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    &-nav {
+      padding: 0;
+      &__name {
+        display: none;
+      }
+      &__info {
+        width: 100%;
+        justify-content: space-between;
+      }
+      &__mail {
+        margin: 0;
+        &__icon {
+          margin-right: 3px;
+        }
+        &__text {
+          font-size: 9px;
+        }
+      }
+      &__btn {
+        padding: 11px 22px;
+        margin-right: -18px;
+        border-radius: 0;
+        border-bottom-left-radius: 3px;
+        font-size: 10px;
+      }
+    }
+    &-main {
+      padding: 60px 0;
+      &__title {
+        margin-bottom: 13px;
+        font-size: 22px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+}
